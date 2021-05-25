@@ -1,0 +1,64 @@
+.morality {
+    grid-column: 2;
+    text-align: center;
+    width: 99%;
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 20px 0px;
+    background-image: linear-gradient(to top, #4c4d8b, white, white);
+
+    span {
+        font-size: 1.7rem;
+    }
+}
+
+.morality-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .morality-block {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 66px 300px max-content;
+        grid-template-rows: 36px;
+        align-items: center;
+        margin-left: 200px;
+
+        h2 {
+            margin: 0px;
+        }
+
+        .morality-name-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 20px;
+            width: 500px;
+
+            img {
+                width: 180px;
+                transform: translate(540px, -20px);
+            }
+        }
+
+        .squares-wrapper {
+            grid-column: 2;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;
+        }
+
+        .morality-effect {
+            font-size: 1.8rem;
+            line-height: 38px;
+            margin-left: 150px;
+        }
+    }
+
+    .morality-blocks-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
